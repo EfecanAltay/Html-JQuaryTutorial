@@ -1,0 +1,80 @@
+<!DOCTYPE Html>
+<Html>
+	<head>
+		
+		<title>Jquery</title>
+		<Style>
+		div{border : 1px solid silver;padding : 10px ; margin : 5px;width : 300px;}
+		
+		.gecis {background-color  : #338 }
+		
+		.normal {
+			border : 1px solid silver;
+			padding : 20px ; margin : 20px;
+			width : 10px ; height : 10px ;
+		}
+		
+		.clicked {
+			border : 3px dashed red ;
+			padding : 20px ; margin : 20px ; 
+			width : 10px ; height : 10px ;
+		}
+		
+		
+		
+		</Style>
+		
+		
+		<script  src = "https://code.jquery.com/jquery-latest.min.js"></script>
+		<script>
+		
+		$(document).ready(function(){
+		/*
+		$('p').css({'font-family ' : 'Arial' , 'color' : 'blue' ,'text' : 'Document Ready'});
+		alert("Document Ready..." + "Jquery Version : " + $.fn.jquery );
+		alert($('h1').text());
+		*/
+		
+		
+		$('#ust').css({'color' : '#f00' , 'padding' : '5px' });
+		$('#ust').click(function(){
+		alert("Merhabalar");
+		});
+		
+		$('#orta').click(function(){
+		$('#orta').css('border', '1px solid gold');
+		});
+		
+		
+		$('#orta').css('border' , '5px solid silver');
+		$('#alt.ekbilgi').css('background-color' , '#585');
+		
+		}
+		);
+		//---------------------------------------------------------------
+	    
+		$('#sec1').click(function(){
+		alert("Merhabalar");
+		});
+		
+		
+		</script>
+		
+		
+	</head>
+	<body>
+	
+	<div id="ust" class ="ekbilgi"> Merhabalar(Click and see MessageBox) </div>
+	<div id="orta" class ="ekbilgi"> Ben JQuery (click and change bolder color)</div>
+	<div id="alt" class ="ekbilgi"> Sen Kimsin? </div>
+	
+	<div id="sec"  class ="gecis"  > <marquee> Secim -- Secim -- Secim -- Secim--Secim</marquee> </div>
+	
+	<div id="sec1" class ="normal"> 1 </div>
+	<div id="sec2" class ="normal"> 2</div>
+	<div id="sec3" class ="normal"> 3 </div>
+	
+	
+	
+	</body>
+</Html>
